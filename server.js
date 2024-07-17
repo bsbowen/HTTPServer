@@ -35,3 +35,16 @@ const port = 3000;
 server.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
+
+/*
+The Content-Type header in an HTTP response is used to specify the type of
+ content that is being sent in the response body. It helps the client 
+ (web browser, application, etc.) understand how to interpret and process the received data.
+
+In the provided Node.js code, the Content-Type header is set using the 
+res.setHeader() method. The header is set to either "text/html" or "application/json" based on the requested URL.
+
+If the requested URL is "/", the server sets the Content-Type header to 
+"text/html" to indicate that the response body contains HTML content.
+If the requested URL is "/api", the server sets the Content-Type header 
+to "application/json" to indicate that the response body contains JSON data.*/
